@@ -1,0 +1,159 @@
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Magic Vibes — روابط</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#0f172a; /* dark navy */
+      --bg2:#0b74ff; /* bright blue */
+      --card:#0b1220;
+      --accent:#7c3aed; /* purple */
+      --glass: rgba(255,255,255,0.06);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.12), transparent),
+                  linear-gradient(180deg,var(--bg1), #04122b 70%);
+      color:#e6eef8;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px;
+    }
+    .container{
+      width:100%;
+      max-width:760px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:20px;
+      padding:28px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+    .top{
+      display:flex;
+      gap:18px;
+      align-items:center;
+    }
+    .logo{
+      width:86px;
+      height:86px;
+      border-radius:18px;
+      background: linear-gradient(135deg,var(--accent), var(--bg2));
+      display:grid;
+      place-items:center;
+      font-weight:800;
+      font-size:22px;
+      color:white;
+      box-shadow: 0 6px 18px rgba(7,12,34,0.6), inset 0 -6px 18px rgba(255,255,255,0.03);
+    }
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0 0;color:rgba(230,238,248,0.8)}
+
+    .buttons{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      margin-top:18px;
+    }
+    a.btn{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      padding:12px 16px;
+      border-radius:12px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.03);
+      color:inherit;
+      transition: transform .14s ease, box-shadow .14s ease, background .14s ease;
+      box-shadow: 0 6px 16px rgba(3,8,20,0.5);
+    }
+    a.btn:hover{transform: translateY(-6px); box-shadow: 0 18px 38px rgba(2,6,23,0.6)}
+    .btn .icon{
+      width:42px;height:42px;border-radius:10px;display:grid;place-items:center;font-weight:700;
+    }
+    .fb{background: linear-gradient(180deg,#1877F2,#0a63d6); color:white}
+    .ig{background: linear-gradient(135deg,#f58529,#dd2a7b); color:white}
+
+    .qr-card{
+      margin-top:18px;
+      display:flex;gap:14px;align-items:center;
+      padding:12px;border-radius:12px;background:var(--glass);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .small{font-size:13px;color:rgba(230,238,248,0.75)}
+
+    footer{margin-top:20px;text-align:center;color:rgba(230,238,248,0.5);font-size:13px}
+
+    /* responsive */
+    @media(min-width:720px){
+      .buttons{flex-direction:row}
+      a.btn{flex:1}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <div class="top">
+      <div class="logo">MV</div>
+      <div>
+        <h1>Magic Vibes</h1>
+        <p class="lead">تابعني على السوشال ميديا — روابط سريعة ومباشرة.</p>
+      </div>
+    </div>
+
+    <div class="buttons" style="margin-top:22px;">
+      <a class="btn" href="https://www.facebook.com/profile.php?id=61580397427152" target="_blank" rel="noopener noreferrer">
+        <div class="icon fb" aria-hidden>
+          <!-- Facebook SVG -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07C2 17.09 5.66 21.26 10.44 22v-7.02H7.9v-2.9h2.54V9.42c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.87h2.74l-.44 2.9h-2.3V22C18.34 21.26 22 17.09 22 12.07z" fill="currentColor"/></svg>
+        </div>
+        <div style="flex:1;text-align:right">
+          <div style="font-weight:600">فيسبوك</div>
+          <div class="small">الصفحة الشخصية</div>
+        </div>
+      </a>
+
+      <a class="btn" href="https://www.instagram.com/magicvibes.8?utm_source=ig_web_button_share_sheet&igsh=MXNwY205ZGZ5bGFoag==" target="_blank" rel="noopener noreferrer">
+        <div class="icon ig" aria-hidden>
+          <!-- Instagram SVG -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.2A4.8 4.8 0 1016.8 13 4.8 4.8 0 0012 8.2zm6.2-3.6a1.12 1.12 0 11-1.12 1.12A1.12 1.12 0 0118.2 4.6z" fill="currentColor"/></svg>
+        </div>
+        <div style="flex:1;text-align:right">
+          <div style="font-weight:600">إنستغرام</div>
+          <div class="small">@magicvibes.8</div>
+        </div>
+      </a>
+    </div>
+
+
+    <footer>© Magic Vibes — كل الحقوق محفوظة</footer>
+  </div>
+
+  <script>
+    // سيعرض QR تلقائياً للرابط الحالي للصفحة (افتراضياً: استبدل هذا بالرابط المستضاف بعد نشره)
+    const pageUrl = window.location.href; // بعد النشر سيكون هذا رابط GitHub Pages
+
+    // نستخدم واجهة خدمة توليد QR صغيرة (API عام موجود) لإنشاء صورة QR بدون مكتبات
+    const qrImg = document.getElementById('qr');
+    const qrApi = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(pageUrl);
+    qrImg.src = qrApi;
+
+    document.getElementById('downloadBtn').addEventListener('click', ()=>{
+      // يحفظ ملف HTML محلياً للمستخدم
+      const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'magic-vibes.html';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+  </script>
+</body>
+</html>
